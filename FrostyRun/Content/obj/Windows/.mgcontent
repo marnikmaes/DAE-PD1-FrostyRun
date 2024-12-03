@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/DAE_Practical/2024-2025/PlatformDev/GameProject/FrostyRun/FrostyRun/Content/graphics/frosty-head-spritesheet.png</File>
+    <File>C:/DAE_Practical/2024-2025/PlatformDev/GameProject/FrostyRun/FrostyRun/Content/graphics/head.png</File>
+    <File>C:/DAE_Practical/2024-2025/PlatformDev/GameProject/FrostyRun/FrostyRun/Content/graphics/IceBlock.png</File>
+    <File>C:/DAE_Practical/2024-2025/PlatformDev/GameProject/FrostyRun/FrostyRun/Content/graphics/snowball.png</File>
+    <File>C:/DAE_Practical/2024-2025/PlatformDev/GameProject/FrostyRun/FrostyRun/Content/graphics/spikes.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

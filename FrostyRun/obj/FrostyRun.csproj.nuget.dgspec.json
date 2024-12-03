@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DAE_Practical\\2024-2025\\PlatformDev\\GameProject\\FrostyRun\\FrostyRun\\FrostyRun.csproj": {}
+    "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyRun.csproj": {}
   },
   "projects": {
-    "C:\\DAE_Practical\\2024-2025\\PlatformDev\\GameProject\\FrostyRun\\FrostyRun\\FrostyRun.csproj": {
+    "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyRun.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DAE_Practical\\2024-2025\\PlatformDev\\GameProject\\FrostyRun\\FrostyRun\\FrostyRun.csproj",
+        "projectUniqueName": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyRun.csproj",
         "projectName": "FrostyRun",
-        "projectPath": "C:\\DAE_Practical\\2024-2025\\PlatformDev\\GameProject\\FrostyRun\\FrostyRun\\FrostyRun.csproj",
+        "projectPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyRun.csproj",
         "packagesPath": "C:\\Users\\marni\\.nuget\\packages\\",
-        "outputPath": "C:\\DAE_Practical\\2024-2025\\PlatformDev\\GameProject\\FrostyRun\\FrostyRun\\obj\\",
+        "outputPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

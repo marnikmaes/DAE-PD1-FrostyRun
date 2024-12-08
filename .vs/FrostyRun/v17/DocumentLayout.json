@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\frostygroundelements\\platfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\frostygroundelements\\platfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\frostygroundelements\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\frostygroundelements\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\screens\\gameoverscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Platfrom.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyGroundElements\\Platfrom.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\FrostyGroundElements\\Platfrom.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyGroundElements\\Platfrom.cs",
-              "RelativeToolTip": "FrostyRun\\FrostyGroundElements\\Platfrom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Title": "Platform.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyGroundElements\\Platform.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\FrostyGroundElements\\Platform.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\FrostyGroundElements\\Platform.cs",
+              "RelativeToolTip": "FrostyRun\\FrostyGroundElements\\Platform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T10:50:25.604Z",
+              "WhenOpened": "2024-12-08T09:27:17.915Z",
               "EditorCaption": ""
             },
             {
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "FrostyRun\\Screens\\StartScreen.cs",
               "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\StartScreen.cs",
               "RelativeToolTip": "FrostyRun\\Screens\\StartScreen.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T10:15:17.132Z",
               "EditorCaption": ""
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "FrostyRun\\Screens\\GameOverScreen.cs",
               "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\GameOverScreen.cs",
               "RelativeToolTip": "FrostyRun\\Screens\\GameOverScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAwDwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T10:15:13.415Z",
               "EditorCaption": ""
@@ -77,8 +77,7 @@
               "RelativeToolTip": "FrostyRun\\Game1.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwC0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T10:14:04.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T10:14:04.242Z"
             }
           ]
         }

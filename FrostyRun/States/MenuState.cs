@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using FrostyRun.ButtonControls;
+using FrostyRun.InterfaceElements;
+using FrostyRun.Common;
 using FrostyRun.PD1;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -46,6 +47,10 @@ namespace FrostyRun.States
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            // Draw the background image first
+            spriteBatch.Draw(GameSettings.StartScreenBg, new Rectangle(0, 0, GameSettings.ScreenWidth, GameSettings.ScreenHeight), Color.White);
+
+            // Draw the components on top of the background
             foreach (var component in _components)
             {
                 component.Draw(gameTime, spriteBatch);
@@ -97,41 +102,6 @@ namespace FrostyRun.States
         private void QuitGameButton_Click(object sender, EventArgs e)
         {
             _game.Exit();
-        }
-    }
-
-    // TextBlock class to handle non-interactive text
-    public class TextBlock : Component
-    {
-        private SpriteFont _font;
-        private string _text;
-
-        public Vector2 Position { get; set; }
-
-        public TextBlock(SpriteFont font, string text)
-        {
-            _font = font;
-            _text = text;
-        }
-
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            // Measure the width of the text
-            var textWidth = _font.MeasureString(_text).X;
-
-            // Calculate the X position to center the text
-            var centeredPosition = new Vector2(
-                (GameSettings.ScreenWidth - textWidth) / 2, // Horizontal center
-                Position.Y // Keep the vertical position the same
-            );
-
-            // Draw the text at the new centered position
-            spriteBatch.DrawString(_font, _text, centeredPosition, Color.Black);
-        }
-
-        public override void Update(GameTime gameTime)
-        {
-            // No update logic needed for static text
         }
     }
 }

@@ -12,8 +12,10 @@
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/IceBlock.png</File>
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/snowball.png</File>
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/spikes.png</File>
+    <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/startScreenBg.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

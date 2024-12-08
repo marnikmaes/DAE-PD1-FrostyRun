@@ -55,6 +55,7 @@ namespace FrostyRun
             GameSettings.IceSpikeTexture = Content.Load<Texture2D>("graphics/spikes");
             GameSettings.FrostyHeadTexture = Content.Load<Texture2D>("graphics/head");
             GameSettings.FrostyBodyTexture = Content.Load<Texture2D>("graphics/snowball");
+            GameSettings.StartScreenBg = Content.Load<Texture2D>("graphics/startScreenBg");
             GameSettings.Button = Content.Load<Texture2D>("controls/Button");
             GameSettings.SpriteFont = Content.Load<SpriteFont>("fonts/Font");
         }

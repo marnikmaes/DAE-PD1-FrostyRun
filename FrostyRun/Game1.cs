@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using FrostyRun.PD1;
 
-
 namespace FrostyRun
 {
     public class Game1 : Game
@@ -14,7 +13,6 @@ namespace FrostyRun
 
         private Song song;
         private bool _isMuted = false;
-
 
         public Game1()
         {
@@ -37,6 +35,9 @@ namespace FrostyRun
 
             song = Content.Load<Song>("audio/gameSong");
             MediaPlayer.Play(song);
+
+            // Set the initial volume to 50%
+            MediaPlayer.Volume = 0.25f;
 
             LoadTextures();
             InitializeScreens();
@@ -62,6 +63,8 @@ namespace FrostyRun
 
             GameSettings.ActiveScreen.Update(gameTime);
             HandleAudioMuteToggle();
+            HandleAudioVolumeIncrease();
+            HandleAudioVolumeDecrease();
 
             base.Update(gameTime);
         }
@@ -72,6 +75,24 @@ namespace FrostyRun
             {
                 _isMuted = !_isMuted;
                 MediaPlayer.IsMuted = _isMuted;
+            }
+        }
+
+        private void HandleAudioVolumeIncrease()
+        {
+            if (UserInputs.IsVolumeUpKeyPressed())
+            {
+                // Increase volume by 0.05 (clamping to the range 0.0 to 5.0)
+                MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume + 0.05f, 0.0f, 1.0f);
+            }
+        }
+
+        private void HandleAudioVolumeDecrease()
+        {
+            if (UserInputs.IsVolumeDownKeyPressed())
+            {
+                // Decrease volume by 0.05 (clamping to the range 0.0 to 5.0)
+                MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume - 0.05f, 0.0f, 1.0f);
             }
         }
 

@@ -36,6 +36,10 @@ namespace FrostyRun
         protected override void Initialize()
         {
             GameSettings.ActiveScreen = GameSettings.PlayScreen;
+
+            GameSettings.Button = Content.Load<Texture2D>("controls/Button");
+            GameSettings.SpriteFont = Content.Load<SpriteFont>("fonts/Font");
+
             base.Initialize();
         }
 
@@ -97,7 +101,7 @@ namespace FrostyRun
         {
             if (UserInputs.IsVolumeUpKeyPressed())
             {
-                // Increase volume by 0.05 (clamping to the range 0.0 to 5.0)
+                // Increase volume by 0.05 (clamping to the range 0.0 to 1.0)
                 MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume + 0.05f, 0.0f, 1.0f);
             }
         }
@@ -106,8 +110,8 @@ namespace FrostyRun
         {
             if (UserInputs.IsVolumeDownKeyPressed())
             {
-                // Decrease volume by 0.05 (clamping to the range 0.0 to 5.0)
-                MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume - 0.05f, 0.0f, 1.0f);
+                // Decrease volume by 0.05 (clamping to the range 0.0 to 1.0)
+                MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume - 0.05f, 0.0f, 0.1f);
             }
         }
 

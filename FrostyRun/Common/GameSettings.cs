@@ -20,6 +20,8 @@ namespace FrostyRun.PD1
         public static Texture2D IceSpikeTexture { get; set; }
         public static Texture2D FrostyHeadTexture { get; set; }
         public static Texture2D FrostyBodyTexture { get; set; }
+        public static Texture2D Button { get; set;}
+        public static SpriteFont SpriteFont { get; set; }
 
         public static Vector2 BlockSize { get; set; } = new Vector2(50, 50);
         #endregion

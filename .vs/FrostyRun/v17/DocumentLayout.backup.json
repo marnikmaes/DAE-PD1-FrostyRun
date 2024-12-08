@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\common\\userinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\common\\userinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\screens\\playscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\screens\\playscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserInputs.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Common\\UserInputs.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Common\\UserInputs.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Common\\UserInputs.cs",
-              "RelativeToolTip": "FrostyRun\\Common\\UserInputs.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAawBsAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PlayScreen.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\PlayScreen.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\Screens\\PlayScreen.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\PlayScreen.cs",
+              "RelativeToolTip": "FrostyRun\\Screens\\PlayScreen.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T10:29:18.813Z",
+              "WhenOpened": "2024-12-08T12:51:10.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\GameState.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\States\\GameState.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\GameState.cs",
+              "RelativeToolTip": "FrostyRun\\States\\GameState.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:46:29.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Game1.cs",
               "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Game1.cs",
               "RelativeDocumentMoniker": "FrostyRun\\Game1.cs",
               "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Game1.cs",
               "RelativeToolTip": "FrostyRun\\Game1.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAcwCcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAIwHYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T10:14:04.242Z",
+              "WhenOpened": "2024-12-08T12:41:56.957Z",
               "EditorCaption": ""
             }
           ]

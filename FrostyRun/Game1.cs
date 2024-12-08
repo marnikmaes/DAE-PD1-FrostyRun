@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using FrostyRun.PD1;
+using FrostyRun.States;
 
 namespace FrostyRun
 {
@@ -13,6 +14,15 @@ namespace FrostyRun
 
         private Song song;
         private bool _isMuted = false;
+
+        private State _currentState;
+        private State _nextState;
+
+        public void ChangeState(State state) 
+        { 
+            _nextState = state;
+        
+        }
 
         public Game1()
         {
@@ -38,6 +48,8 @@ namespace FrostyRun
 
             // Set the initial volume to 50%
             MediaPlayer.Volume = 0.25f;
+
+            _currentState = new MenuState(this, GraphicsDevice, Content);
 
             LoadTextures();
             InitializeScreens();
@@ -65,6 +77,9 @@ namespace FrostyRun
             HandleAudioMuteToggle();
             HandleAudioVolumeIncrease();
             HandleAudioVolumeDecrease();
+
+            _currentState.Update(gameTime);
+            _currentState.PostUpdate(gameTime);
 
             base.Update(gameTime);
         }
@@ -104,6 +119,7 @@ namespace FrostyRun
 
             _spriteBatch.Begin();
             GameSettings.ActiveScreen.Draw(_spriteBatch);
+            _currentState.Draw(gameTime, _spriteBatch);
             _spriteBatch.End();
 
             base.Draw(gameTime);

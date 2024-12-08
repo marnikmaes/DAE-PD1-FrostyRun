@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace FrostyRun.FrostyElements
 {
-    public class FrostyFloor
+    public class Platform
     {
         #region Fields and Properties
         // List of active platforms in the floor
@@ -21,7 +21,7 @@ namespace FrostyRun.FrostyElements
 
         #region Constructor
         // Initializes the floor and generates the starting platforms
-        public FrostyFloor() => GenerateStartingPlatforms();
+        public Platform() => GenerateStartingPlatforms();
         #endregion
 
         #region Platform Generation

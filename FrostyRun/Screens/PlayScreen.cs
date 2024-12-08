@@ -10,14 +10,14 @@ namespace FrostyRun.Screens
     {
         private PlayerCharacter _playerCharacter;
         private SpriteSheet _headSpriteSheet;
-        private FrostyFloor _floor;
+        private Platform _floor;
 
         public PlayScreen() { }
 
         public override void Initialize()
         {
             // Create the floor (it should be initialized here)
-            _floor = new FrostyFloor();
+            _floor = new Platform();
 
             // Create the head sprite at a fixed position (removed floor logic)
             _headSpriteSheet = new SpriteSheet(GameSettings.FrostyHeadTexture, 1, 1, new Vector2(400, 300), GameSettings.BlockSize, 0);

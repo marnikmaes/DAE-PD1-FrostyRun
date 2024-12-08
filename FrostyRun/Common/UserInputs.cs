@@ -15,22 +15,22 @@ namespace FrostyRun.PD1
         // Check if a key is pressed for movement: Up, Down, Left, Right
         public static bool IsUpPressed()
         {
-            return IsKeyDown(Keys.W) || IsKeyDown(Keys.Up);
+            return IsKeyDown(Keys.W);
         }
 
         public static bool IsDownPressed()
         {
-            return IsKeyDown(Keys.S) || IsKeyDown(Keys.Down);
+            return IsKeyDown(Keys.S);
         }
 
         public static bool IsRightPressed()
         {
-            return IsKeyDown(Keys.D) || IsKeyDown(Keys.Right);
+            return IsKeyDown(Keys.D);
         }
 
         public static bool IsLeftPressed()
         {
-            return IsKeyDown(Keys.A) || IsKeyDown(Keys.Left);
+            return IsKeyDown(Keys.A);
         }
 
         // Helper method to check if a key is currently pressed
@@ -52,6 +52,15 @@ namespace FrostyRun.PD1
             return CurrentKeyboardState.IsKeyDown(Keys.M) && !PreviousKeyboardState.IsKeyDown(Keys.M);
         }
 
+        public static bool IsVolumeUpKeyPressed()
+        {
+            return CurrentKeyboardState.IsKeyDown(Keys.Up) && !PreviousKeyboardState.IsKeyDown(Keys.Up);
+        }
+
+        public static bool IsVolumeDownKeyPressed()
+        {
+            return CurrentKeyboardState.IsKeyDown(Keys.Down) && !PreviousKeyboardState.IsKeyDown(Keys.Down);
+        }
 
         // Update the current and previous input states
         public static void Update(GameTime gameTime)

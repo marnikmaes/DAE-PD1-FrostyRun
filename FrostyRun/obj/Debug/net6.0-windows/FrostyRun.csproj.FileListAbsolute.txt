@@ -95,3 +95,8 @@ D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\obj\Debug\net6.0-windows\refint\FrostyRun.
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\obj\Debug\net6.0-windows\FrostyRun.pdb
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\obj\Debug\net6.0-windows\FrostyRun.genruntimeconfig.cache
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\obj\Debug\net6.0-windows\ref\FrostyRun.dll
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\audio\gameSong.wma
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\audio\gameSong.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\audio\gameSong.mp3
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\audio\gameSong.wma
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\audio\gameSong.xnb

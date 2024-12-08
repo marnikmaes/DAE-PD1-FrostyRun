@@ -13,6 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin audio/gameSong.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/gameSong.mp3
+
 #begin graphics/frosty-head-spritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor

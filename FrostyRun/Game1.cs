@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-using FrostyRun.PD1;
 using FrostyRun.States;
+using FrostyRun.PD1;
 
 namespace FrostyRun
 {
@@ -12,16 +12,15 @@ namespace FrostyRun
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        private Song song;
+        private Song _song;
         private bool _isMuted = false;
 
         private State _currentState;
         private State _nextState;
 
-        public void ChangeState(State state) 
-        { 
+        public void ChangeState(State state)
+        {
             _nextState = state;
-        
         }
 
         public Game1()
@@ -35,11 +34,6 @@ namespace FrostyRun
 
         protected override void Initialize()
         {
-            GameSettings.ActiveScreen = GameSettings.PlayScreen;
-
-            GameSettings.Button = Content.Load<Texture2D>("controls/Button");
-            GameSettings.SpriteFont = Content.Load<SpriteFont>("fonts/Font");
-
             base.Initialize();
         }
 
@@ -47,16 +41,12 @@ namespace FrostyRun
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            song = Content.Load<Song>("audio/gameSong");
-            MediaPlayer.Play(song);
-
-            // Set the initial volume to 50%
-            MediaPlayer.Volume = 0.25f;
-
-            _currentState = new MenuState(this, GraphicsDevice, Content);
-
+            // Load game assets
             LoadTextures();
-            InitializeScreens();
+            LoadAudio();
+
+            // Set the initial state
+            _currentState = new MenuState(this, GraphicsDevice, Content);
         }
 
         private void LoadTextures()
@@ -65,25 +55,36 @@ namespace FrostyRun
             GameSettings.IceSpikeTexture = Content.Load<Texture2D>("graphics/spikes");
             GameSettings.FrostyHeadTexture = Content.Load<Texture2D>("graphics/head");
             GameSettings.FrostyBodyTexture = Content.Load<Texture2D>("graphics/snowball");
+            GameSettings.Button = Content.Load<Texture2D>("controls/Button");
+            GameSettings.SpriteFont = Content.Load<SpriteFont>("fonts/Font");
         }
 
-        private void InitializeScreens()
+        private void LoadAudio()
         {
-            GameSettings.PlayScreen.LoadContent();
-            GameSettings.PlayScreen.Initialize();
+            _song = Content.Load<Song>("audio/gameSong");
+            MediaPlayer.Play(_song);
+
+            // Set the initial volume to 50%
+            MediaPlayer.Volume = 0.25f;
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if (IsExitRequested()) Exit();
+            // Handle state transitions
+            if (_nextState != null)
+            {
+                _currentState = _nextState;
+                _nextState = null;
+            }
 
-            GameSettings.ActiveScreen.Update(gameTime);
-            HandleAudioMuteToggle();
-            HandleAudioVolumeIncrease();
-            HandleAudioVolumeDecrease();
-
+            // Update the current state
             _currentState.Update(gameTime);
             _currentState.PostUpdate(gameTime);
+
+            // Handle global inputs
+            if (IsExitRequested()) Exit();
+            HandleAudioMuteToggle();
+            HandleAudioVolumeAdjustments();
 
             base.Update(gameTime);
         }
@@ -97,32 +98,29 @@ namespace FrostyRun
             }
         }
 
-        private void HandleAudioVolumeIncrease()
+        private void HandleAudioVolumeAdjustments()
         {
             if (UserInputs.IsVolumeUpKeyPressed())
             {
-                // Increase volume by 0.05 (clamping to the range 0.0 to 1.0)
                 MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume + 0.05f, 0.0f, 1.0f);
             }
-        }
-
-        private void HandleAudioVolumeDecrease()
-        {
             if (UserInputs.IsVolumeDownKeyPressed())
             {
-                // Decrease volume by 0.05 (clamping to the range 0.0 to 1.0)
-                MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume - 0.05f, 0.0f, 0.1f);
+                MediaPlayer.Volume = MathHelper.Clamp(MediaPlayer.Volume - 0.05f, 0.0f, 1.0f);
             }
         }
 
-        private bool IsExitRequested() => GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape);
+        private bool IsExitRequested()
+        {
+            return GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed
+                || Keyboard.GetState().IsKeyDown(Keys.Escape);
+        }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.DeepSkyBlue);
 
             _spriteBatch.Begin();
-            GameSettings.ActiveScreen.Draw(_spriteBatch);
             _currentState.Draw(gameTime, _spriteBatch);
             _spriteBatch.End();
 

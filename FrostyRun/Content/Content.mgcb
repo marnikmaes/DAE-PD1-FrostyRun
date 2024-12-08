@@ -19,6 +19,25 @@
 /processorParam:Quality=Best
 /build:audio/gameSong.mp3
 
+#begin controls/Button.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:controls/Button.png
+
+#begin fonts/Font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:fonts/Font.spritefont
+
 #begin graphics/frosty-head-spritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor

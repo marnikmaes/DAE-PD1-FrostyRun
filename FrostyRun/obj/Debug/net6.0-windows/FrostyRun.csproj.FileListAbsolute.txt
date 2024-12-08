@@ -100,3 +100,9 @@ D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\audio\gam
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\audio\gameSong.mp3
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\audio\gameSong.wma
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\audio\gameSong.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\controls\Button.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\fonts\Font.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\controls\Button.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\fonts\Font.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\controls\Button.png
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\fonts\Font.spritefont

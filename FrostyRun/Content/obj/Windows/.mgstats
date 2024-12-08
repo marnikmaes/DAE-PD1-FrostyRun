@@ -1,9 +1,10 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/audio/gameSong.mp3","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/audio/gameSong.xnb","SongProcessor","SongContent",1926719,126,0,7450639
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/controls/Button.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/controls/Button.xnb","TextureProcessor","Texture2DContent",324,25685,0,0183261
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/fonts/Font.spritefont","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/fonts/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0,0652998
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/frosty-head-spritesheet.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/frosty-head-spritesheet.xnb","TextureProcessor","Texture2DContent",1175,20085,0,0014144
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/head.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/head.xnb","TextureProcessor","Texture2DContent",912,10085,0,0103892
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/IceBlock.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/IceBlock.xnb","TextureProcessor","Texture2DContent",894,10085,0,0019455
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/snowball.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/snowball.xnb","TextureProcessor","Texture2DContent",562,10085,0,0087746
-"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/spikes.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/spikes.xnb","TextureProcessor","Texture2DContent",600,10085,0,0075551
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/audio/gameSong.mp3","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/audio/gameSong.xnb","SongProcessor","SongContent",1926719,126,1,4732004
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/controls/Button.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/controls/Button.xnb","TextureProcessor","Texture2DContent",324,25685,0,056068
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/fonts/Font.spritefont","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/fonts/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2065,37919,0,1496342
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/frosty-head-spritesheet.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/frosty-head-spritesheet.xnb","TextureProcessor","Texture2DContent",1175,20085,0,0289084
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/head.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/head.xnb","TextureProcessor","Texture2DContent",912,10085,0,016372
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/IceBlock.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/IceBlock.xnb","TextureProcessor","Texture2DContent",894,10085,0,0027143
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/snowball.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/snowball.xnb","TextureProcessor","Texture2DContent",562,10085,0,0207673
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/spikes.png","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/spikes.xnb","TextureProcessor","Texture2DContent",600,10085,0,0107288
+"D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/startScreenBg.jpg","D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/bin/Windows/graphics/startScreenBg.xnb","TextureProcessor","Texture2DContent",2290012,24000085,1,2603112

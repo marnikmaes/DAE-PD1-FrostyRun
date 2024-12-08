@@ -106,3 +106,6 @@ D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windo
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\fonts\Font.xnb
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\controls\Button.png
 D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\fonts\Font.spritefont
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\graphics\startScreenBg.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\bin\Windows\graphics\startScreenBg.xnb
+D:\GitHub\DAE-PD1-FrostyRun\FrostyRun\bin\Debug\net6.0-windows\Content\graphics\startScreenBg.jpg

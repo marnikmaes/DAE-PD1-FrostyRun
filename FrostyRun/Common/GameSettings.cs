@@ -1,5 +1,4 @@
-﻿using FrostyRun.Screens;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace FrostyRun.PD1
@@ -12,7 +11,7 @@ namespace FrostyRun.PD1
 
         public static Vector2 ScreenSize => new Vector2(ScreenWidth, ScreenHeight);
         public static ScreenBase ActiveScreen { get; set; }
-        public static ScreenBase PlayScreen { get; set; } = new PlayScreen();
+        //public static ScreenBase PlayScreen { get; set; } = new PlayScreen();
         #endregion
 
         #region Textures and Size
@@ -20,6 +19,8 @@ namespace FrostyRun.PD1
         public static Texture2D IceSpikeTexture { get; set; }
         public static Texture2D FrostyHeadTexture { get; set; }
         public static Texture2D FrostyBodyTexture { get; set; }
+
+        public static Texture2D StartScreenBg { get; set; }
         public static Texture2D Button { get; set;}
         public static SpriteFont SpriteFont { get; set; }
 

@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\component.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\component.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\buttoncontrols\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\buttoncontrols\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\content\\fonts\\font.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\content\\fonts\\font.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\states\\menustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\states\\menustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Component.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Component.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Component.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Component.cs",
-              "RelativeToolTip": "FrostyRun\\Component.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:44:16.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Button.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\ButtonControls\\Button.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\ButtonControls\\Button.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\ButtonControls\\Button.cs",
-              "RelativeToolTip": "FrostyRun\\ButtonControls\\Button.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:43:38.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenuState.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\MenuState.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\States\\MenuState.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\MenuState.cs",
-              "RelativeToolTip": "FrostyRun\\States\\MenuState.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowF8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:39:16.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\GameState.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\States\\GameState.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\GameState.cs",
-              "RelativeToolTip": "FrostyRun\\States\\GameState.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:35:49.505Z",
+              "Title": "Font.spritefont",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Content\\fonts\\Font.spritefont",
+              "RelativeDocumentMoniker": "FrostyRun\\Content\\fonts\\Font.spritefont",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Content\\fonts\\Font.spritefont",
+              "RelativeToolTip": "FrostyRun\\Content\\fonts\\Font.spritefont",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-08T16:09:11.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Game1.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Game1.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Game1.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Game1.cs",
-              "RelativeToolTip": "FrostyRun\\Game1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCcAAAAtAAAAAAAAAA==",
+              "Title": "State.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\State.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\States\\State.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\State.cs",
+              "RelativeToolTip": "FrostyRun\\States\\State.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:41:56.957Z",
+              "WhenOpened": "2024-12-08T16:05:00.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuState.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\MenuState.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\States\\MenuState.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\MenuState.cs",
+              "RelativeToolTip": "FrostyRun\\States\\MenuState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:49:59.479Z",
               "EditorCaption": ""
             }
           ]

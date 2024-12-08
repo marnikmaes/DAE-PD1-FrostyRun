@@ -1,7 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using FrostyRun.PD1;
+
 
 namespace FrostyRun
 {
@@ -9,6 +11,10 @@ namespace FrostyRun
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
+        private Song song;
+        private bool _isMuted = false;
+
 
         public Game1()
         {
@@ -28,6 +34,9 @@ namespace FrostyRun
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            song = Content.Load<Song>("audio/gameSong");
+            MediaPlayer.Play(song);
 
             LoadTextures();
             InitializeScreens();
@@ -52,7 +61,18 @@ namespace FrostyRun
             if (IsExitRequested()) Exit();
 
             GameSettings.ActiveScreen.Update(gameTime);
+            HandleAudioMuteToggle();
+
             base.Update(gameTime);
+        }
+
+        private void HandleAudioMuteToggle()
+        {
+            if (UserInputs.IsMuteKeyPressed())
+            {
+                _isMuted = !_isMuted;
+                MediaPlayer.IsMuted = _isMuted;
+            }
         }
 
         private bool IsExitRequested() => GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape);

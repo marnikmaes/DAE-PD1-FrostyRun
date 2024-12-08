@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/audio/gameSong.mp3</File>
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/frosty-head-spritesheet.png</File>
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/head.png</File>
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/IceBlock.png</File>
@@ -11,6 +12,7 @@
     <File>D:/GitHub/DAE-PD1-FrostyRun/FrostyRun/Content/graphics/spikes.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

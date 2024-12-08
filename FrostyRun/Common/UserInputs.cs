@@ -46,6 +46,13 @@ namespace FrostyRun.PD1
             return CurrentMouseState.LeftButton == ButtonState.Pressed && PreviousMouseState.LeftButton == ButtonState.Released;
         }
 
+        // Detect M-key press
+        public static bool IsMuteKeyPressed()
+        {
+            return CurrentKeyboardState.IsKeyDown(Keys.M) && !PreviousKeyboardState.IsKeyDown(Keys.M);
+        }
+
+
         // Update the current and previous input states
         public static void Update(GameTime gameTime)
         {

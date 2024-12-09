@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\common\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\common\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\content\\fonts\\font.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\content\\fonts\\font.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameSettings.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Common\\GameSettings.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\Common\\GameSettings.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Common\\GameSettings.cs",
+              "RelativeToolTip": "FrostyRun\\Common\\GameSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:09:36.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Font.spritefont",
               "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Content\\fonts\\Font.spritefont",
               "RelativeDocumentMoniker": "FrostyRun\\Content\\fonts\\Font.spritefont",
               "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Content\\fonts\\Font.spritefont",
               "RelativeToolTip": "FrostyRun\\Content\\fonts\\Font.spritefont",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-08T16:09:11.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "State.cs",
               "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\State.cs",
               "RelativeDocumentMoniker": "FrostyRun\\States\\State.cs",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MenuState.cs",
               "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\MenuState.cs",
               "RelativeDocumentMoniker": "FrostyRun\\States\\MenuState.cs",

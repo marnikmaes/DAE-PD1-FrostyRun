@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrostyRun")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85a2577536f329685c6fff3a1e9280016564fde1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3632b48833ad6d323b91909f1c2cc0cfdd0b9e05")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrostyRun")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrostyRun")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

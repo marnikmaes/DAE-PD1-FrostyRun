@@ -9,14 +9,14 @@ namespace FrostyRun.Characters
     public class PlayerCharacter : GameObject
     {
         private PlayerCharacterHead _head;  // The head of the player
-        private List<SpriteSheet> _bodySegments;  // Store body segments as SpriteSheets
+        private List<PlayerCharacterBody> _bodySegments;  // Store body segments as PlayerCharacterBody instances
 
         private const int MaxBodySegments = 8; // 8 body segments + 1 head
 
         public PlayerCharacter(PlayerCharacterHead head)
         {
             _head = head;  // Initialize the head
-            _bodySegments = new List<SpriteSheet>();  // Initialize body segments list
+            _bodySegments = new List<PlayerCharacterBody>();  // Initialize body segments list
         }
 
         // Add a body segment when clicked
@@ -25,16 +25,13 @@ namespace FrostyRun.Characters
             if (_bodySegments.Count < MaxBodySegments)  // Ensure we do not exceed max body segments
             {
                 var lastPosition = _bodySegments.Count > 0
-                    ? _bodySegments[^1].TopLeftPosition
+                    ? _bodySegments[^1].Visualisation.TopLeftPosition
                     : _head.TopLeftPosition;  // Get the position of the last body segment or the head
 
-                // Create a new SpriteSheet for the body segment (this is a concrete GameObject)
-                var newBodySegment = new SpriteSheet(
+                // Create a new body segment (PlayerCharacterBody)
+                var newBodySegment = new PlayerCharacterBody(
                     bodyTexture,
-                    1, 1,
-                    new Vector2(lastPosition.X, lastPosition.Y + 50), // Position new segment below the last one
-                    new Vector2(50, 50),  // The size of the body segment
-                    0  // Initial rotation (optional)
+                    new Vector2(lastPosition.X, lastPosition.Y + 50) // Position new segment below the last one
                 );
 
                 _bodySegments.Add(newBodySegment);  // Add new body segment

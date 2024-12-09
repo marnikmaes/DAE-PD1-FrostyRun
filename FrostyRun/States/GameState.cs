@@ -10,7 +10,7 @@ namespace FrostyRun.States
     public class GameState : State
     {
         private PlayerCharacter _playerCharacter;
-        private SpriteSheet _headSpriteSheet;
+        private PlayerCharacterHead _head;  // Updated to PlayerCharacterHead
         private Platform _floor;
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
@@ -18,8 +18,12 @@ namespace FrostyRun.States
         {
             // Initialize gameplay objects here
             _floor = new Platform();
-            _headSpriteSheet = new SpriteSheet(GameSettings.FrostyHeadTexture, 1, 1, new Vector2(400, 300), GameSettings.BlockSize, 0);
-            _playerCharacter = new PlayerCharacter(_headSpriteSheet);
+
+            // Create the head sprite sheet (PlayerCharacterHead now)
+            _head = new PlayerCharacterHead(GameSettings.FrostyHeadTexture, new Vector2(400, 300));
+
+            // Create the PlayerCharacter, passing in the PlayerCharacterHead instead of SpriteSheet
+            _playerCharacter = new PlayerCharacter(_head);
         }
 
         public override void Update(GameTime gameTime)

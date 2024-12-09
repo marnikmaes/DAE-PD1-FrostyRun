@@ -10,8 +10,6 @@ namespace FrostyRun.PD1
         public static int ScreenHeight { get; private set; } = 800;
 
         public static Vector2 ScreenSize => new Vector2(ScreenWidth, ScreenHeight);
-        public static ScreenBase ActiveScreen { get; set; }
-        //public static ScreenBase PlayScreen { get; set; } = new PlayScreen();
         #endregion
 
         #region Textures and Size

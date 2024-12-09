@@ -1,11 +1,10 @@
-﻿using FrostyRun.Common;
-using FrostyRun.PD1;
+﻿using FrostyRun.PD1;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace FrostyRun.InterfaceElements
 {
-    public class TextBlock : Component
+    public class TextBlock
     {
         private SpriteFont _font;
         private string _text;
@@ -18,7 +17,7 @@ namespace FrostyRun.InterfaceElements
             _text = text;
         }
 
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             var textWidth = _font.MeasureString(_text).X;
             var centeredPosition = new Vector2(
@@ -29,7 +28,7 @@ namespace FrostyRun.InterfaceElements
             spriteBatch.DrawString(_font, _text, centeredPosition, Color.Black);
         }
 
-        public override void Update(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             // No logic needed for static text
         }

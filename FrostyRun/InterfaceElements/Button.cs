@@ -1,5 +1,4 @@
-﻿using FrostyRun.Common;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -10,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FrostyRun.InterfaceElements
 {
-    public class Button : Component
+    public class Button
     {
         #region Fields
 
@@ -59,7 +58,7 @@ namespace FrostyRun.InterfaceElements
             PenColour = Color.Black;
         }
 
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             var colour = Color.White;
 
@@ -77,7 +76,7 @@ namespace FrostyRun.InterfaceElements
             }
         }
 
-        public override void Update(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             _previousMouse = _currentMouse;
             _currentMouse = Mouse.GetState();

@@ -4,33 +4,45 @@ using FrostyRun.PD1;
 using FrostyRun.FrostyElements;
 using FrostyRun.Characters;
 using Microsoft.Xna.Framework.Content;
+using System.IO;
+using FrostyRun.InterfaceElements;
 
 namespace FrostyRun.States
 {
     public class GameState : State
     {
         private PlayerCharacter _playerCharacter;
-        private PlayerCharacterHead _head;  // Updated to PlayerCharacterHead
         private Platform _floor;
+        private ScoreManager _scoreManager;
+        private SpriteFont _font;
+        private HighScoreManager _highScoreManager; // Add HighScoreManager
+
+        private const string HighScoreFilePath = "highscore.txt"; // File to save the high score
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
             : base(game, graphicsDevice, content)
         {
-            // Initialize gameplay objects here
+            // Initialize gameplay objects
             _floor = new Platform();
 
-            // Create the head sprite sheet (PlayerCharacterHead now)
-            _head = new PlayerCharacterHead(GameSettings.FrostyHeadTexture, new Vector2(400, 300));
+            var head = new PlayerCharacterHead(GameSettings.FrostyHeadTexture, new Vector2(400, 300));
+            _playerCharacter = new PlayerCharacter(head);
 
-            // Create the PlayerCharacter, passing in the PlayerCharacterHead instead of SpriteSheet
-            _playerCharacter = new PlayerCharacter(_head);
+            // Initialize the ScoreManager and HighScoreManager
+            _scoreManager = new ScoreManager();
+            _highScoreManager = new HighScoreManager(HighScoreFilePath);
+
+            // Load the high score from the file
+            _highScoreManager.LoadHighScore();
+
+            // Load the font for displaying the score
+            _font = GameSettings.SpriteFont; // Ensure "ScoreFont" is available in your content
         }
 
         public override void Update(GameTime gameTime)
         {
             UserInputs.Update(gameTime);
 
-            // Detect mouse click to add a body segment
             if (UserInputs.IsLeftClick())
             {
                 _playerCharacter.AddBodySegment(GameSettings.FrostyBodyTexture);
@@ -39,17 +51,28 @@ namespace FrostyRun.States
             // Update game objects
             _playerCharacter.Update(gameTime);
             _floor.Update(gameTime);
+            _scoreManager.Update(gameTime); // Update the score
+
+            // Save high score when the game ends or during important events
+            _highScoreManager.SaveHighScore(_scoreManager.CurrentScore);
         }
 
         public override void PostUpdate(GameTime gameTime)
         {
-            // Implement any logic that occurs after the main update, if needed
+            // Placeholder for additional logic after updates
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            // Draw game objects
             _playerCharacter.Draw(spriteBatch);
             _floor.Draw(spriteBatch);
+
+            // Draw the score
+            _scoreManager.Draw(spriteBatch, _font, new Vector2(10, 10), Color.White);
+
+            // Draw the high score
+            spriteBatch.DrawString(_font, $"High Score: {_highScoreManager.HighScore}", new Vector2(10, 40), Color.Yellow);
         }
     }
 }

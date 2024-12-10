@@ -4,7 +4,6 @@ using FrostyRun.PD1;
 using FrostyRun.FrostyElements;
 using FrostyRun.Characters;
 using Microsoft.Xna.Framework.Content;
-using System.IO;
 using FrostyRun.InterfaceElements;
 
 namespace FrostyRun.States
@@ -17,7 +16,7 @@ namespace FrostyRun.States
         private SpriteFont _font;
         private HighScoreManager _highScoreManager; // Add HighScoreManager
 
-        private const string HighScoreFilePath = "highscore.txt"; // File to save the high score
+        private const string HighScoreFilePath = "highscoren.txt"; // File to save the high score
 
         public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
             : base(game, graphicsDevice, content)

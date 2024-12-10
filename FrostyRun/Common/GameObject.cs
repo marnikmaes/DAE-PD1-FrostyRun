@@ -45,7 +45,7 @@ namespace FrostyRun.PD1
         public virtual void Draw(SpriteBatch spriteBatch)
         {
             Visualisation.Draw(spriteBatch);
-            //DrawHitBox(spriteBatch);
+            DrawHitBox(spriteBatch);
         }
 
         private void DrawHitBox(SpriteBatch spriteBatch)

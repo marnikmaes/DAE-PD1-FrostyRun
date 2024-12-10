@@ -11,7 +11,7 @@ namespace FrostyRun.PD1
         public Vector2 TopLeftPosition
         {
             get => Visualisation.TopLeftPosition;
-            protected set => Visualisation.TopLeftPosition = value;
+            set => Visualisation.TopLeftPosition = value;
         }
 
         public Vector2 Size => Visualisation.Size;

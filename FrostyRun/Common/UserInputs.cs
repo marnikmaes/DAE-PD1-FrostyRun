@@ -33,6 +33,12 @@ namespace FrostyRun.PD1
             return IsKeyDown(Keys.A);
         }
 
+        public static bool IsResetPressed() 
+        {
+            return IsKeyDown(Keys.R);
+        
+        }
+
         // Helper method to check if a key is currently pressed
         private static bool IsKeyDown(Keys key)
         {

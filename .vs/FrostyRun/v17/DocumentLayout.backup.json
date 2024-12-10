@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\characters\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\characters\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\characters\\playercharacterbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\characters\\playercharacterbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\states\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerCharacter.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacter.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Characters\\PlayerCharacter.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacter.cs*",
-              "RelativeToolTip": "FrostyRun\\Characters\\PlayerCharacter.cs*",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwD8AAAAAAAAAAAAAAA==",
+              "Title": "GameState.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\GameState.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\States\\GameState.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\States\\GameState.cs",
+              "RelativeToolTip": "FrostyRun\\States\\GameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:38:14.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerCharacterBody.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacterBody.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Characters\\PlayerCharacterBody.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacterBody.cs*",
-              "RelativeToolTip": "FrostyRun\\Characters\\PlayerCharacterBody.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:39:40.757Z",
+              "WhenOpened": "2024-12-10T08:43:43.365Z",
               "EditorCaption": ""
             }
           ]

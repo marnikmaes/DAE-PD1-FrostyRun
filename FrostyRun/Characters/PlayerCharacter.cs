@@ -16,8 +16,6 @@ namespace FrostyRun.Characters
         private const float MaxFallSpeed = 1f; // Max falling speed (to avoid infinite acceleration)
 
         private float _verticalVelocity; // The velocity at which the character is falling or jumping
-        private const float BodySegmentOffset = 20f; // Adjust this to the size of your body segments
-
         public PlayerCharacter(PlayerCharacterHead head)
         {
             _head = head;
@@ -28,14 +26,14 @@ namespace FrostyRun.Characters
         public void AddBodySegment(Texture2D bodyTexture)
         {
             // Move the head and all body segments up to make space for the new body part
-            _head.TopLeftPosition = new Vector2(_head.TopLeftPosition.X, _head.TopLeftPosition.Y - BodySegmentOffset);
+            _head.TopLeftPosition = new Vector2(_head.TopLeftPosition.X, _head.TopLeftPosition.Y - _head.Size.Y);
 
             // Adjust the position of existing body segments
             foreach (var segment in _bodySegments)
             {
                 segment.Visualisation.TopLeftPosition = new Vector2(
                     segment.Visualisation.TopLeftPosition.X,
-                    segment.Visualisation.TopLeftPosition.Y - BodySegmentOffset
+                    segment.Visualisation.TopLeftPosition.Y - _head.Size.Y
                 );
             }
 

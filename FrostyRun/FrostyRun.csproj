@@ -68,7 +68,6 @@
     <Folder Include="Content\audio\" />
     <Folder Include="Content\bin\Windows\audio\" />
     <Folder Include="Content\bin\Windows\Content\audio\" />
-    <Folder Include="Highscore\" />
   </ItemGroup>
   <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
     <Message Text="Restoring dotnet tools" Importance="High" />

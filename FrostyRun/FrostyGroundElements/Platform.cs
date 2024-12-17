@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using FrostyRun.PD1;
 using System;
 using System.Collections.Generic;
+using FrostyRun.Characters;
 
 namespace FrostyRun.FrostyElements
 {
@@ -18,6 +19,7 @@ namespace FrostyRun.FrostyElements
         // Spawn location for new platforms
         private Vector2 _spawnLocation => new Vector2(GameSettings.ScreenWidth, GameSettings.ScreenHeight - GameSettings.BlockSize.Y);
         #endregion
+
 
         #region Constructor
         // Initializes the floor and generates the starting platforms
@@ -52,12 +54,19 @@ namespace FrostyRun.FrostyElements
 
         #region Platform Updates
         // Updates the floor platforms each frame
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, PlayerCharacter playerCharacter)
         {
+            // Move platforms and handle spawning
             MoveFloorPlatforms(gameTime);
             CullInactivePlatforms();
             AddNewPlatformsIfNeeded();
+
+            // Handle player update, passing the list of active platforms
+            playerCharacter.Update(gameTime, PlatformsList);
         }
+
+
+
 
         // Moves the platforms and deactivates them when they move off-screen
         private void MoveFloorPlatforms(GameTime gameTime)

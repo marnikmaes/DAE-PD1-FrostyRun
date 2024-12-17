@@ -48,13 +48,15 @@ namespace FrostyRun.States
             }
 
             // Update game objects
-            _playerCharacter.Update(gameTime);
-            _floor.Update(gameTime);
+            _playerCharacter.Update(gameTime, _floor.PlatformsList); // Pass the list of platforms
+            _floor.Update(gameTime, _playerCharacter); // Pass the player character to platform's update method
             _scoreManager.Update(gameTime); // Update the score
 
             // Save high score when the game ends or during important events
             _highScoreManager.SaveHighScore(_scoreManager.CurrentScore);
         }
+
+
 
         public override void PostUpdate(GameTime gameTime)
         {

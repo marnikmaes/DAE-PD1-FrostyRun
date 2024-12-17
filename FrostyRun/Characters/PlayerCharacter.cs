@@ -1,4 +1,5 @@
-﻿using FrostyRun.PD1;
+﻿using FrostyRun.FrostyElements;
+using FrostyRun.PD1;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -12,8 +13,8 @@ namespace FrostyRun.Characters
         private List<PlayerCharacterBody> _bodySegments;
 
         // Gravity settings
-        private const float Gravity = 1.5f; // Gravity strength
-        private const float MaxFallSpeed = 1.5f; // Max falling speed (to avoid infinite acceleration)
+        private const float Gravity = 1.2f; // Gravity strength
+        private const float MaxFallSpeed = 1.2f; // Max falling speed
 
         private float _verticalVelocity; // The velocity at which the character is falling or jumping
         public PlayerCharacter(PlayerCharacterHead head)
@@ -55,10 +56,10 @@ namespace FrostyRun.Characters
             _bodySegments.Add(newBodySegment);
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, List<IcePlatform> platforms)
         {
             // Apply gravity to vertical velocity
-            _verticalVelocity += Gravity; // Gravity accelerates the character
+            _verticalVelocity += Gravity;
 
             // Prevent the character from falling infinitely fast
             if (_verticalVelocity > MaxFallSpeed)
@@ -68,6 +69,18 @@ namespace FrostyRun.Characters
 
             // Move the head based on the velocity
             _head.TopLeftPosition = new Vector2(_head.TopLeftPosition.X, _head.TopLeftPosition.Y + _verticalVelocity);
+
+            // Check collision with platforms
+            foreach (var platform in platforms)
+            {
+                // Check for collision between player and platform
+                if (IsCollidingWithPlatform(platform))
+                {
+                    // Stop falling and position the player on top of the platform
+                    LandOnGround(platform);
+                    break; // Only need to check the first platform the player collides with
+                }
+            }
 
             // Update body segments, apply the same gravity to them
             for (int i = 0; i < _bodySegments.Count; i++)
@@ -84,6 +97,7 @@ namespace FrostyRun.Characters
             }
         }
 
+
         public void Draw(SpriteBatch spriteBatch)
         {
             _head.Draw(spriteBatch);
@@ -95,9 +109,40 @@ namespace FrostyRun.Characters
         }
 
         // Reset the velocity when the character lands or reaches the ground
-        public void LandOnGround()
+        public void LandOnGround(IcePlatform platform)
         {
-            _verticalVelocity = 0f; // Stop falling when landing
+            // Reset vertical velocity (stop falling)
+            _verticalVelocity = 0f;
+
+            // Position the player just on top of the platform
+            _head.TopLeftPosition = new Vector2(
+                _head.TopLeftPosition.X,
+                platform.PlatformTopLeftPosition.Y - _head.Size.Y
+            );
         }
+
+
+        private bool IsCollidingWithPlatform(IcePlatform platform)
+        {
+            // Create the bounding box for the player's head
+            Rectangle playerHeadBounds = new Rectangle(
+                (int)_head.TopLeftPosition.X,
+                (int)_head.TopLeftPosition.Y,
+                (int)_head.Size.X,
+                (int)_head.Size.Y
+            );
+
+            // Create the bounding box for the platform
+            Rectangle platformBounds = new Rectangle(
+                (int)platform.PlatformTopLeftPosition.X,
+                (int)platform.PlatformTopLeftPosition.Y,
+                (int)GameSettings.BlockSize.X,
+                (int)GameSettings.BlockSize.Y
+            );
+
+            // Check if the player’s head collides with the platform (i.e., overlaps)
+            return playerHeadBounds.Intersects(platformBounds) && _verticalVelocity >= 0;
+        }
+
     }
 }

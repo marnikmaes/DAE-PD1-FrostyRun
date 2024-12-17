@@ -15,10 +15,10 @@ namespace FrostyRun
         private Song _song;
         private bool _isMuted = false;
 
-        private State _currentState;
-        private State _nextState;
+        private Screen _currentState;
+        private Screen _nextState;
 
-        public void ChangeState(State state)
+        public void ChangeState(Screen state)
         {
             _nextState = state;
         }
@@ -46,7 +46,7 @@ namespace FrostyRun
             LoadAudio();
 
             // Set the initial state
-            _currentState = new MenuState(this, GraphicsDevice, Content);
+            _currentState = new StartScreen(this, GraphicsDevice, Content);
         }
 
         private void LoadTextures()

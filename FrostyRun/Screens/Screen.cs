@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace FrostyRun.States
 {
-    public abstract class State
+    public abstract class Screen
     {
         #region Fields
 
@@ -18,7 +18,7 @@ namespace FrostyRun.States
         #endregion
 
         #region Methods
-        public State(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
+        public Screen(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
         {
             _game = game;
 

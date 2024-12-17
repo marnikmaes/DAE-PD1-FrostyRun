@@ -8,7 +8,7 @@ using FrostyRun.InterfaceElements;
 
 namespace FrostyRun.States
 {
-    public class GameState : State
+    public class PlayScreen : Screen
     {
         private PlayerCharacter _playerCharacter;
         private Platform _floor;
@@ -18,7 +18,7 @@ namespace FrostyRun.States
 
         private const string HighScoreFilePath = "highscoren.txt"; // File to save the high score
 
-        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
+        public PlayScreen(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
             : base(game, graphicsDevice, content)
         {
             // Initialize gameplay objects

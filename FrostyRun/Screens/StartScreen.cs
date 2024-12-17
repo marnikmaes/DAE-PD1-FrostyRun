@@ -8,12 +8,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace FrostyRun.States
 {
-    public class MenuState : State
+    public class StartScreen : Screen
     {
         private List<Button> _buttons;
         private TextBlock _infoTextBlock;
 
-        public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
+        public StartScreen(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
             : base(game, graphicsDevice, content)
         {
             var buttonTexture = GameSettings.Button;
@@ -99,7 +99,7 @@ namespace FrostyRun.States
 
         private void NewGameButton_Click(object sender, EventArgs e)
         {
-            _game.ChangeState(new GameState(_game, _graphicsDevice, _content));
+            _game.ChangeState(new PlayScreen(_game, _graphicsDevice, _content));
         }
 
         private void QuitGameButton_Click(object sender, EventArgs e)

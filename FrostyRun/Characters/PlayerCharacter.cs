@@ -12,8 +12,8 @@ namespace FrostyRun.Characters
         private List<PlayerCharacterBody> _bodySegments;
 
         // Gravity settings
-        private const float Gravity = 1f; // Gravity strength
-        private const float MaxFallSpeed = 1f; // Max falling speed (to avoid infinite acceleration)
+        private const float Gravity = 1.5f; // Gravity strength
+        private const float MaxFallSpeed = 1.5f; // Max falling speed (to avoid infinite acceleration)
 
         private float _verticalVelocity; // The velocity at which the character is falling or jumping
         public PlayerCharacter(PlayerCharacterHead head)

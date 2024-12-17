@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\GitHub\\DAE-PD1-FrostyRun\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\screens\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\screens\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\screens\\playscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\screens\\playscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\screens\\screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\screens\\screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\characters\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\characters\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|d:\\github\\dae-pd1-frostyrun\\frostyrun\\characters\\playercharacterhead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B0D4E6-F043-4301-AD6A-2014C6BF6FE8}|FrostyRun\\FrostyRun.csproj|solutionrelative:frostyrun\\characters\\playercharacterhead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StartScreen.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\StartScreen.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Screens\\StartScreen.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\StartScreen.cs",
-              "RelativeToolTip": "FrostyRun\\Screens\\StartScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T07:41:04.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Screen.cs",
-              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\Screen.cs",
-              "RelativeDocumentMoniker": "FrostyRun\\Screens\\Screen.cs",
-              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\Screen.cs",
-              "RelativeToolTip": "FrostyRun\\Screens\\Screen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T07:40:48.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "PlayScreen.cs",
               "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\PlayScreen.cs",
               "RelativeDocumentMoniker": "FrostyRun\\Screens\\PlayScreen.cs",
               "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Screens\\PlayScreen.cs",
               "RelativeToolTip": "FrostyRun\\Screens\\PlayScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T07:40:23.176Z",
+              "WhenOpened": "2024-12-17T08:31:48.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerCharacter.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacter.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\Characters\\PlayerCharacter.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacter.cs",
+              "RelativeToolTip": "FrostyRun\\Characters\\PlayerCharacter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T08:31:01.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerCharacterHead.cs",
+              "DocumentMoniker": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacterHead.cs",
+              "RelativeDocumentMoniker": "FrostyRun\\Characters\\PlayerCharacterHead.cs",
+              "ToolTip": "D:\\GitHub\\DAE-PD1-FrostyRun\\FrostyRun\\Characters\\PlayerCharacterHead.cs",
+              "RelativeToolTip": "FrostyRun\\Characters\\PlayerCharacterHead.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T08:30:39.554Z",
               "EditorCaption": ""
             }
           ]

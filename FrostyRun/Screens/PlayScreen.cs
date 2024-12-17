@@ -24,7 +24,7 @@ namespace FrostyRun.States
             // Initialize gameplay objects
             _floor = new Platform();
 
-            var head = new PlayerCharacterHead(GameSettings.FrostyHeadTexture, new Vector2(400, 300));
+            var head = new PlayerCharacterHead(GameSettings.FrostyHeadTexture, new Vector2(400, 600));
             _playerCharacter = new PlayerCharacter(head);
 
             // Initialize the ScoreManager and HighScoreManager
